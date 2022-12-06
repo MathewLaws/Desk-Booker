@@ -73,9 +73,7 @@ Array.from(desks).forEach(desk => {
     })
 })
 
-let submit_btn = document.getElementById("submit-btn")
-
-submit_btn.addEventListener("click", (e) => {
+document.getElementById("form").addEventListener("submit", (e) => {
     e.preventDefault()
     let details = Array.from(document.querySelectorAll("#form input")).reduce((acc, input) => ({...acc, [input.id]: input.value }), {})
     console.log(details)
