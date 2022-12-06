@@ -1,0 +1,30 @@
+body, * {
+    margin: 0;
+}
+
+#room {
+    height: 80vmin;
+    border: 2px solid black;
+    aspect-ratio: 1/1;
+}
+
+#table {
+    height: 25%;
+    width: 10%;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+
+#desk {
+    border: 2px solid black;
+}
+
+.drag {
+    position: absolute;
+}
+
+.hover:hover {
+    background-color: blue;
+    opacity: .5;
+    transition: ease-in-out .2s
+}
